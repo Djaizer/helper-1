@@ -11,4 +11,21 @@ public abstract class Constants {
 		TOWN,
 		CITY
 	}
+	
+	public enum PersistenceUnit {
+		HOME("home"),
+		WORK("work"),
+		TEST("test");
+		
+		private final String persistenceUnit;
+		
+		private PersistenceUnit(final String persistenceUnit){
+			this.persistenceUnit = persistenceUnit;
+		}
+		
+		@Override
+	    public final String toString() {
+	        return persistenceUnit;
+	    }
+	}
 }
